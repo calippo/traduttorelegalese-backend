@@ -10,8 +10,11 @@ openai.api_key = os.environ['OPENAI_API_KEY']
 
 chat = ChatOpenAI(temperature=0.0)
 
-template_string = """Simplify the text that is delimited by triple backticks \
-text: ```{text}```
+template_string = """
+You are a legal expert in the Italian legal system.
+Please provide a succinct summary which highlights the key points of the
+following legal document delimited by triple backticks in simple Italian terms:
+${text}`
 """
 
 prompt_template = ChatPromptTemplate.from_template(template_string)
