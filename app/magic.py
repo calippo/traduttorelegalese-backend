@@ -8,7 +8,7 @@ from langchain.prompts import ChatPromptTemplate
 _ = load_dotenv(find_dotenv()) # read local .env file
 openai.api_key = os.environ['OPENAI_API_KEY']
 
-chat = ChatOpenAI(temperature=0.0)
+chat = ChatOpenAI(temperature=0.0, model_name='gpt-4-32k')
 
 template_string = """
 You are a legal expert in the Italian legal system.
