@@ -20,7 +20,7 @@ build:
 	docker build -t traduttorelegalese .
 
 tag:
-	docker tag traduttorelegalese ghcr.io/calippo/traduttorelegalese-backend:v1
+	docker tag traduttorelegalese ghcr.io/calippo/traduttorelegalese-backend:v2
 
 push:
-	docker push ghcr.io/calippo/traduttorelegalese-backend:v1
+	docker push ghcr.io/calippo/traduttorelegalese-backend:v2
